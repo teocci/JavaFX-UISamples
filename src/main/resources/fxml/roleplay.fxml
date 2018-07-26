@@ -1,0 +1,69 @@
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.HBox?>
+
+<?import com.github.teocci.codesample.javafx.enums.Role?>
+
+<HBox fx:id="root" prefWidth="-1.0" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+    <children>
+        <Label contentDisplay="TOP" text="Darth Vader">
+            <userData>
+                <FXCollections fx:factory="observableArrayList">
+                    <Role fx:value="FATHER"/>
+                </FXCollections>
+            </userData>
+            <graphic>
+                <ImageView>
+                    <image>
+                        <Image url="http://icons.iconarchive.com/icons/jonathan-rey/star-wars-characters/128/Vader-03-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Label>
+        <Label contentDisplay="TOP" text="Queen Amidala">
+            <userData>
+                <FXCollections fx:factory="observableArrayList">
+                    <Role fx:value="MOTHER"/>
+                </FXCollections>
+            </userData>
+            <graphic>
+                <ImageView>
+                    <image>
+                        <Image url="http://icons.iconarchive.com/icons/jonathan-rey/star-wars-characters/128/Padme-Amidala-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Label>
+        <Label contentDisplay="TOP" text="Luke Skywalker">
+            <userData>
+                <FXCollections fx:factory="observableArrayList">
+                    <Role fx:value="SON"/>
+                    <Role fx:value="BROTHER"/>
+                </FXCollections>
+            </userData>
+            <graphic>
+                <ImageView>
+                    <image>
+                        <Image url="http://icons.iconarchive.com/icons/jonathan-rey/star-wars-characters/128/Luke-Skywalker-01-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Label>
+        <Label contentDisplay="TOP" text="Princess Leia">
+            <userData>
+                <FXCollections fx:factory="observableArrayList">
+                    <Role fx:value="DAUGHTER"/>
+                    <Role fx:value="SISTER"/>
+                </FXCollections>
+            </userData>
+            <graphic>
+                <ImageView>
+                    <image>
+                        <Image url="http://icons.iconarchive.com/icons/jonathan-rey/star-wars-characters/128/Leia-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Label>
+    </children>
+</HBox>

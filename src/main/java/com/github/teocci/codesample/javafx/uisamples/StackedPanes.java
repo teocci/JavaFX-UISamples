@@ -98,13 +98,7 @@ public class StackedPanes extends Application
     {
         final ScrollPane scroll = new ScrollPane();
         scroll.setContent(node);
-        scroll.viewportBoundsProperty().addListener(new ChangeListener<Bounds>()
-        {
-            public void changed(ObservableValue<? extends Bounds> ov, Bounds oldBounds, Bounds bounds)
-            {
-                node.setPrefWidth(bounds.getWidth());
-            }
-        });
+        scroll.viewportBoundsProperty().addListener((ov, oldBounds, bounds) -> node.setPrefWidth(bounds.getWidth()));
         return scroll;
     }
 

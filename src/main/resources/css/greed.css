@@ -1,0 +1,11 @@
+.log-entry {
+    -fx-background-color: lavender;
+}
+
+.info {
+    -fx-text-fill: goldenrod;
+}
+
+.warn {
+    -fx-text-fill: firebrick;
+}
