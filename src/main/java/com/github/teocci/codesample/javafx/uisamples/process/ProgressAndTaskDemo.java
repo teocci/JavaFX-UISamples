@@ -4,7 +4,7 @@ package com.github.teocci.codesample.javafx.uisamples.process;
 import java.io.File;
 import java.util.List;
 
-import com.github.teocci.codesample.javafx.uisamples.features.CopyTask;
+import com.github.teocci.codesample.javafx.tasks.CopyTask;
 import javafx.application.Application;
 import javafx.concurrent.WorkerStateEvent;
 import javafx.geometry.Insets;

@@ -23,6 +23,14 @@ public class Person
         this.married = new SimpleBooleanProperty(isMarried);
     }
 
+    public Person(String firstName, String lastName) {
+        this.firstName = new SimpleStringProperty(firstName);
+        this.lastName = new SimpleStringProperty(lastName);
+        this.email = new SimpleStringProperty("");
+        this.married = new SimpleBooleanProperty(false);
+    }
+
+
     public Person(String firstName, String lastName, String email)
     {
         this.firstName = new SimpleStringProperty(firstName);

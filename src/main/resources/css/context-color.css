@@ -1,0 +1,8 @@
+.menu-item:focused {
+    -fx-accent: transparent;
+    -fx-selection-bar: transparent;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: -fx-text-base-color;
+}

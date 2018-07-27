@@ -1,0 +1,17 @@
+.root {
+    -fx-app-background: cornsilk;
+    -fx-background-color: -fx-app-background;
+    -fx-padding: 20;
+}
+
+.right-page-turn {
+    -fx-rotate: 3;
+    -fx-translate-y: -2;
+    -fx-background-insets: 20 10 15 80;
+    -fx-background-color: -fx-app-background;
+    -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 0, 15);
+}
+
+.content-pane {
+    -fx-background-color: whitesmoke;
+}

@@ -11,7 +11,7 @@ package com.github.teocci.codesample.javafx.uisamples.features;
 import com.github.teocci.codesample.javafx.elements.ShapeMachine;
 import com.github.teocci.codesample.javafx.elements.VisualizedImage;
 import com.github.teocci.codesample.javafx.handlers.ContinualShapeGenerator;
-import com.github.teocci.codesample.javafx.tasks.ParallelDimension;
+import com.github.teocci.codesample.javafx.threads.ParallelDimension;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;

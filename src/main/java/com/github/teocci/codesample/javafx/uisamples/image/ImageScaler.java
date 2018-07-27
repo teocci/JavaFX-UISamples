@@ -18,8 +18,7 @@ import javafx.stage.Stage;
  */
 public class ImageScaler extends Application
 {
-    private static final String IMAGE_LOC =
-            "http://icons.iconarchive.com/icons/martin-berube/character/32/Robot-icon.png";
+    private static final String IMAGE_LOC = "https://i.imgur.com/ydmnWRt.png";
 
     private static final int SCALE_FACTOR = 6;
 

@@ -1,5 +1,6 @@
 package com.github.teocci.codesample.javafx.uisamples.web;
 
+import com.github.teocci.codesample.javafx.utils.UtilHelper;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.embed.swing.SwingFXUtils;
@@ -67,7 +68,7 @@ public class WebViewCaptureDemo extends Application
         controls.getChildren().addAll(capture, progress, prefWidth, prefHeight);
 
         final ImageView imageView = new ImageView();
-        ScrollPane imageViewScroll = makeScrollable(imageView);
+        ScrollPane imageViewScroll = UtilHelper.makeScrollable(imageView);
         imageViewScroll.setPrefSize(800, 300);
 
         final PauseTransition pt = new PauseTransition();
@@ -135,21 +136,6 @@ public class WebViewCaptureDemo extends Application
 
         stage.setScene(new Scene(layout));
         stage.show();
-    }
-
-    private ScrollPane makeScrollable(final ImageView imageView)
-    {
-        final ScrollPane scroll = new ScrollPane();
-        final StackPane centeredImageView = new StackPane();
-
-        centeredImageView.getChildren().add(imageView);
-        scroll.viewportBoundsProperty().addListener((ov, oldBounds, bounds) -> centeredImageView.setPrefSize(
-                Math.max(imageView.prefWidth(bounds.getHeight()), bounds.getWidth()),
-                Math.max(imageView.prefHeight(bounds.getWidth()), bounds.getHeight())
-        ));
-        scroll.setContent(centeredImageView);
-
-        return scroll;
     }
 
     public static void main(String[] args) { Application.launch(WebViewCaptureDemo.class); }

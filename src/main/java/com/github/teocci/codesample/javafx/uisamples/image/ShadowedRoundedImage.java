@@ -1,5 +1,6 @@
 package com.github.teocci.codesample.javafx.uisamples.image;
 
+import com.github.teocci.codesample.javafx.controllers.WingClipper;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,15 +17,10 @@ import java.io.IOException;
 
 public class ShadowedRoundedImage extends Application
 {
-    public static void main(String[] args)
-    {
-        launch(args);
-    }
-
     @Override
     public void start(Stage stage) throws IOException
     {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/batmanlostinthemix.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/batman-lost-in-the-mix.fxml"));
         loader.setController(new WingClipper());
 
         Pane batman = loader.load();
@@ -32,5 +28,10 @@ public class ShadowedRoundedImage extends Application
         stage.setTitle("Where's Batman?");
         stage.setScene(new Scene(batman));
         stage.show();
+    }
+
+    public static void main(String[] args)
+    {
+        launch(args);
     }
 }

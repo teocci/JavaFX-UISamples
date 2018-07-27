@@ -23,7 +23,6 @@ public class PepsiChallenge extends Application
     public void start(Stage stage)
     {
         Image coke = new Image("http://icons.iconarchive.com/icons/michael/coke-pepsi/256/Coca-Cola-Can-icon.png");
-
         Image pepsi = new Image("http://icons.iconarchive.com/icons/michael/coke-pepsi/256/Pepsi-Can-icon.png");
 
         ImageView bottom = new ImageView(coke);

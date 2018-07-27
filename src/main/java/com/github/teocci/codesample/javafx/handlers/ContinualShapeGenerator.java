@@ -1,7 +1,7 @@
 package com.github.teocci.codesample.javafx.handlers;
 
 import com.github.teocci.codesample.javafx.elements.VisualizedImage;
-import com.github.teocci.codesample.javafx.tasks.ParallelDimension;
+import com.github.teocci.codesample.javafx.threads.ParallelDimension;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.concurrent.Service;

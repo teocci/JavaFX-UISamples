@@ -1,0 +1,25 @@
+.root {
+    -fx-font-size: 20px;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.list-cell {
+    -fx-background-color: azure;
+}
+
+.fruit {
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.apple {
+    -fx-fill: forestgreen;
+}
+
+.orange {
+    -fx-fill: orange;
+}
+
+.pear {
+    -fx-fill: gold;
+}
