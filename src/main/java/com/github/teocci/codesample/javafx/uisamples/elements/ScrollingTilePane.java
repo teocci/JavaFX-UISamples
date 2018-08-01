@@ -28,7 +28,7 @@ public class ScrollingTilePane extends Application {
         tilePane.setPrefColumns(4);
         tilePane.setStyle("-fx-background-color: lightblue;");
 
-        // dont grow more than the preferred number of columns:
+        // Dont grow more than the preferred number of columns:
         tilePane.setMaxWidth(Region.USE_PREF_SIZE);
 
         HBox tiles[] = new HBox[9];
