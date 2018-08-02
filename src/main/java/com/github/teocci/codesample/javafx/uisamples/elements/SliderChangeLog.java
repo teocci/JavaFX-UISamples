@@ -1,7 +1,6 @@
 package com.github.teocci.codesample.javafx.uisamples.elements;
 
 import javafx.application.Application;
-import javafx.beans.value.*;
 import javafx.geometry.*;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -24,8 +23,8 @@ public class SliderChangeLog extends Application
     @Override
     public void start(Stage stage) throws Exception
     {
-        Pane logsPane = createLogsPane();
-        Slider slider = createMonitoredSlider();
+        Pane logsPane = buildLogsPane();
+        Slider slider = buildSlider();
 
         VBox layout = new VBox(10);
         layout.setAlignment(Pos.CENTER);
@@ -41,7 +40,7 @@ public class SliderChangeLog extends Application
         stage.show();
     }
 
-    private Slider createMonitoredSlider()
+    private Slider buildSlider()
     {
         final Slider slider = new Slider(0, 1, 0.25);
         slider.setMajorTickUnit(0.5);
@@ -67,27 +66,21 @@ public class SliderChangeLog extends Application
         return slider;
     }
 
-    private HBox createLogsPane()
+    private HBox buildLogsPane()
     {
         HBox logs = new HBox(10);
-        logs.getChildren().addAll(
-                createLabeledLog("Start", startLog),
-                createLabeledLog("End", endLog)
-        );
+        logs.getChildren().addAll(buildLogPane("Start", startLog), buildLogPane("End", endLog));
 
         return logs;
     }
 
-    private Pane createLabeledLog(String logName, ListView<String> log)
+    private Pane buildLogPane(String logName, ListView<String> log)
     {
         Label label = new Label(logName);
         label.setLabelFor(log);
 
         VBox logPane = new VBox(5);
-        logPane.getChildren().setAll(
-                label,
-                log
-        );
+        logPane.getChildren().setAll(label, log);
 
         logPane.setAlignment(Pos.TOP_LEFT);
         VBox.setVgrow(log, Priority.ALWAYS);
