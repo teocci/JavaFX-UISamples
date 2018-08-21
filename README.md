@@ -13,8 +13,6 @@ This repository contains a sample code intended to demonstrate the capabilities 
 
 ## Credits
 
-This project was based on **JavaFxPlayVideoAndAudio** (Dmitriy Gerashenko <d.a.gerashenko@gmail.com>).
-
 This project was based on these libraries:
 
 - [Java WebSockets][1] for the WebSockets implementation
