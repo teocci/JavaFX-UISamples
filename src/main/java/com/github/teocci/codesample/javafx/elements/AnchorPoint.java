@@ -16,6 +16,18 @@ import javafx.scene.shape.StrokeType;
  */
 public class AnchorPoint extends Circle
 {
+    public AnchorPoint(String id, DoubleProperty x, DoubleProperty y) {
+        super(x.get(), y.get(), 5);
+        setId(id);
+        setFill(Color.GOLD.deriveColor(1, 1, 1, 0.5));
+        setStroke(Color.GOLD);
+        setStrokeWidth(2);
+        setStrokeType(StrokeType.OUTSIDE);
+
+        x.bind(centerXProperty());
+        y.bind(centerYProperty());
+    }
+
     public AnchorPoint(Color color, DoubleProperty x, DoubleProperty y)
     {
         super(x.get(), y.get(), 5);
